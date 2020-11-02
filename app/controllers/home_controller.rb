@@ -1,4 +1,10 @@
 class HomeController < ApplicationController
-  def oldorders
+  def resolvedorders
+  end
+
+  def currentorders
+  end
+
+  def overview
   end
 end
