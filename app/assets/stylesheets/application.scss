@@ -17,4 +17,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
+.navbar-body {
+    font-weight: bolder;
+    font-size: 120%;
+}
