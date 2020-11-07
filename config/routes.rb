@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'home/contact'
   get 'home/overview'
 
   get 'home/currentorders'
