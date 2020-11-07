@@ -1,8 +1,21 @@
 Rails.application.routes.draw do
-  get 'home/contact'
-  get 'home/overview'
+  root 'home#overview'
+  get 'home/overview', to: 'home#overview'
 
-  get 'home/currentorders'
-  get 'home/resolvedorders'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'home/contact', to: 'home#contact' do
+    @name = params["name"]
+    @email = params["email"]
+    @message = params["message"]
+    erb :contact
+  end
+
+  get 'home/currentorders', to: 'home#currentorders'
+  get 'home/resolvedorders', to: 'home#resolvedorders'
+
+  post 'home/contact', to: 'home#contact' do
+    @name = params["name"]
+    @email = params["email"]
+    @message = params["message"]
+    puts "ok!"
+  end
 end

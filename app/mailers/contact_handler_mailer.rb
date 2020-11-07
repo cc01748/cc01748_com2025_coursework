@@ -1,2 +1,3 @@
 class ContactHandlerMailer < ApplicationMailer
+
 end
