@@ -1,0 +1,2 @@
+class ContactHandlerMailer < ApplicationMailer
+end
