@@ -6,7 +6,6 @@ Rails.application.routes.draw do
     @name = params["name"]
     @email = params["email"]
     @message = params["message"]
-    erb :contact
   end
 
   get 'home/currentorders', to: 'home#currentorders'
@@ -16,6 +15,7 @@ Rails.application.routes.draw do
     @name = params["name"]
     @email = params["email"]
     @message = params["message"]
-    puts "ok!"
+    
+    ContactHandlerMailer.with(name: @name, email: @email, message: @message).deliver_now
   end
 end
