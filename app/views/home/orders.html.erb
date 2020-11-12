@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <%= javascript_include_tag('javascripts/orders.js') %>
     </head>
 
     <body>
@@ -9,23 +10,23 @@
         <table class = "table">
             <thead class = "thead-light">
                 <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Second Name</th>
-                    <th>Status</th>
-                    <th>Date/time</th>
-                    <th>Message</th>
+                    <th><%=t('orders.order_table.order_num')%></th>
+                    <th><%=t('orders.order_table.first_name')%></th>
+                    <th><%=t('orders.order_table.second_name')%></th>
+                    <th><%=t('orders.order_table.status')%></th>
+                    <th><%=t('orders.order_table.date')%></th>
+                    <th><%=t('orders.order_table.message')%></th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>John</td>
-                    <td>Smith</td>
-                    <td>Unpicked/picked</td>
-                    <td>20:47 02/11/20</td>
-                    <td>Collection time warning</td>
+                    <th scope="row"><%=t('orders.order_table_content.order_num')%></th>
+                    <td><%=t('orders.order_table_content.first_name')%></td>
+                    <td><%=t('orders.order_table_content.second_name')%></td>
+                    <td><%=t('orders.order_table_content.status')%></td>
+                    <td><%=t('orders.order_table_content.date')%></td>
+                    <td><%=t('orders.order_table_content.message')%></td>
                     <td><button type = "button" class = "btn btn-link" id = "test">GO TO</button></td>
                 </tr>
             </tbody>

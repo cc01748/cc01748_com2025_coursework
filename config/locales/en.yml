@@ -32,15 +32,49 @@
 en:
   app_title: Click and Collect
 
+  navbar:
+    nav_overview: Overview
+    nav_orders: Orders
+    nav_contact: Contact
+
   overview:
     page_title: Overview
+
+    data:
+      new_orders: New orders -
+      resolved_orders: Resolved orders - 
 
   orders:
     page_title: All Orders
 
+    order_table_content:
+      order_num: ERR
+      first_name: ERR
+      second_name: ERR
+      status: ERR
+      date: ERR
+      message: ERR
+
+    order_table:
+      order_num: NO.
+      first_name: First Name
+      second_name: Second Name
+      status: Status
+      date: Date
+      message: Message
+
+
   contact:
     page_title: Contact Site Owners
 
+    form:
+      username: Username
+      username_placeholder: E.G. cc01748
+      email: Email
+      email_placeholder: E.G. cc01748@surrey.ac.uk
+      Message: Message
+      
+      
 
 
   

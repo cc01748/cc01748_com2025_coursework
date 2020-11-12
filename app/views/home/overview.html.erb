@@ -7,9 +7,9 @@
 
     <body>
         <h1><%=t('overview.page_title') %></h1>
-        <p>New orders today: 0</p>
-        <p>Orders collected today: 0</p>
-        <p>Unresolved orders today: 0 </p>
+        <p><%=t('overview.data.new_orders') %></p>
+        <p><%=t('overview.data.resolved_orders') %></p>
+        
     <%= yield %>
     </body>
 

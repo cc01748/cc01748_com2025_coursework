@@ -12,16 +12,16 @@
             <input name="utf8" type="hidden" value="&#x2713;" />
             <input name="authenticity_token" type="hidden" value="J7CBxfHalt49OSHp27hblqK20c9PgwJ108nDHX/8Cts=" />
                 <div class = "form-group">
-                    <label for = "formGroupUser">Username</label>
-                    <input name = "name" value = "<%= @name %>" type = "text" class = "form-control" id = "formGroupUser" placeholder = "E.G. cc01748">
+                    <label for = "formGroupUser"><%=t('contact.form.username') %></label>
+                    <input name = "name" value = "<%= @name %>" type = "text" class = "form-control" id = "formGroupUser" placeholder = "<%=t('contact.form.username_placeholder') %>">
                 </div>
                 <div class = "form-group">
-                    <label for = "formGroupEmail">Email</label>
-                    <input name = "email" value = "<% @email %>" type = "email" class = "form-control" id = "formGroupEmail" placeholder = "E.G. cc01748@surrey.ac.uk">
+                    <label for = "formGroupEmail"><%=t('contact.form.email') %></label>
+                    <input name = "email" value = "<%= @email %>" type = "email" class = "form-control" id = "formGroupEmail" placeholder = "<%=t('contact.form.email_placeholder') %>">
                 </div>
                 <div class = "form-group">
-                    <label for = "formGroupMessage">Message</label>
-                    <textarea name = "message" value = "<% @message %>" class = "form-control" id = "formGroupMessage" placeholder = "Type your message here" >
+                    <label for = "formGroupMessage"><%=t('contact.form.message') %></label>
+                    <textarea name = "message" value = "<%= @message %>" class = "form-control" id = "formGroupMessage" placeholder = "Type your message here" >
                     </textarea>
                 </div>
             <input type="submit" class = "btn btn-primary">
