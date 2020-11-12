@@ -48,7 +48,7 @@ en:
     page_title: All Orders
 
     order_table_content:
-      order_num: ERR
+      order_num: 1
       first_name: ERR
       second_name: ERR
       status: ERR

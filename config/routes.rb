@@ -17,4 +17,6 @@ Rails.application.routes.draw do
     
     ContactHandlerMailer.with(name: @name, email: @email, message: @message).deliver_now
   end
+
+  get 'home/vieworder', to: 'home#vieworder'
 end

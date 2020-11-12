@@ -1,11 +1,13 @@
 class HomeController < ApplicationController
-  def contact
+  def vieworder
   end
 
-  def orders
+  def contact
   end
 
   def overview
   end
 
+  def orders
+  end
 end

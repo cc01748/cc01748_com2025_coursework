@@ -1,10 +1,8 @@
 require 'test_helper'
 
 class HomeControllerTest < ActionDispatch::IntegrationTest
-  
-#Tests for overview page
-  test "should get overiew" do
-    get home_overview_url
+  test "should get order" do
+    get home_order_url
     assert_response :success
   end
 
