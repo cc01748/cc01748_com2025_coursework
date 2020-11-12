@@ -1,7 +1,13 @@
+<!DOCTYPE html>
 <html>
-    <h1>Contact Site Owners</h1>
-    <br>
+    <head>
+    </head>
+    
     <body>
+        <h1><%=t('contact.page_title') %></h1>
+
+        <br>
+        
         <form accept-charset="UTF-8" method="post">
             <input name="utf8" type="hidden" value="&#x2713;" />
             <input name="authenticity_token" type="hidden" value="J7CBxfHalt49OSHp27hblqK20c9PgwJ108nDHX/8Cts=" />
@@ -18,7 +24,7 @@
                     <textarea name = "message" value = "<% @message %>" class = "form-control" id = "formGroupMessage" placeholder = "Type your message here" >
                     </textarea>
                 </div>
-                <input type="submit" class = "btn btn-primary">
+            <input type="submit" class = "btn btn-primary">
         </form>
     </body>
 </html>

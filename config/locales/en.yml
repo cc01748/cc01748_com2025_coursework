@@ -30,4 +30,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  app_title: Click and Collect
+
+  overview:
+    page_title: Overview
+
+  current_orders:
+    page_title: Current Orders
+
+  resolved_orders:
+    page_title: Resolved Orders
+
+  contact:
+    page_title: Contact Site Owners
+
+  order_details:
+    
+
   
