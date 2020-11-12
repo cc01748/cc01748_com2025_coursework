@@ -35,16 +35,12 @@ en:
   overview:
     page_title: Overview
 
-  current_orders:
-    page_title: Current Orders
-
-  resolved_orders:
-    page_title: Resolved Orders
+  orders:
+    page_title: All Orders
 
   contact:
     page_title: Contact Site Owners
 
-  order_details:
-    
+
 
   

@@ -2,12 +2,10 @@ class HomeController < ApplicationController
   def contact
   end
 
-  def currentorders
+  def orders
   end
 
   def overview
   end
 
-  def resolvedorders
-  end
 end

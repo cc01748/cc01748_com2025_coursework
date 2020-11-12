@@ -8,8 +8,7 @@ Rails.application.routes.draw do
     @message = params["message"]
   end
 
-  get 'home/currentorders', to: 'home#currentorders'
-  get 'home/resolvedorders', to: 'home#resolvedorders'
+  get 'home/orders', to: 'home#orders'
 
   post 'home/contact', to: 'home#contact' do
     @name = params["name"]
