@@ -4,7 +4,7 @@
     </head>
 
     <body>
-    <h1 id = "order_number"><%=t('order_tails.order_number')%></h1>
+    <h1 id = "order_number"></h1>
     <p><%=t('order_details.first_name')%></p>
     <p><%=t('order_details.last_name')%></p>
     <p><%=t('order_details.status')%></p>
@@ -12,5 +12,11 @@
     <p><%=t('order_details.message')%></p>
     <p><%=t('order_details.email')%></p>
     <p><%=t('order_details.contact_number')%></p>
+    <p><%=t('order_details.order_details')%></p>
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary btn-lg btn-block"><b><%=t('vieworder.actions.picked_button')%></b></button>
+    <button type="button" class="btn btn-primary btn-lg btn-block"><b><%=t('vieworder.actions.collected_button')%></b></button>
+
     </body>
 </html>

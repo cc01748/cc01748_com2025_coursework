@@ -1,24 +1,30 @@
 en:
   app_title: Click and Collect
 
+  # Navbar labels locales
   navbar:
     nav_overview: Overview
     nav_orders: Orders
     nav_contact: Contact
 
+  # Overview page locales
   overview:
     page_title: Overview
 
+    # General overview data labels
     data:
       new_orders: New orders -
       resolved_orders: Resolved orders - 
 
+  # Orders page locales
   orders:
     page_title: All Orders
 
+  # Contact page locales
   contact:
     page_title: Contact Site Owners
 
+    # Text for contact page form labels
     form:
       username: Username
       username_placeholder: E.G. cc01748
@@ -26,8 +32,16 @@ en:
       email_placeholder: E.G. cc01748@surrey.ac.uk
       Message: Message
 
-  vieworder: lol 
-      
+  # View order page locales
+  vieworder: 
+    page_title: View Order 
+
+    # Action button text's
+    actions: 
+      picked_button: Picked
+      collected_button: Collected
+
+  # Text labels for order details - used in tabled and on vieworders page  
   order_details_labels:
     order_number: NO.
     first_name: First name
@@ -37,7 +51,9 @@ en:
     message: Message
     email: Email
     contact_number: Contact Number
+    order_details: Order Details
 
+  # Base text for order details - these are only shown if details aren't grabbed from database
   order_details:
     order_number: 1
     first_name: ERR
@@ -47,6 +63,7 @@ en:
     message: ERR
     email: ERR
     contact_number: ERR
+    order_details: ERR
 
 
   
