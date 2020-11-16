@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  customer: one
+  item: one
   status: MyString
   message: MyString
-  orderDetails: MyString
 
 two:
+  customer: two
+  item: two
   status: MyString
   message: MyString
-  orderDetails: MyString

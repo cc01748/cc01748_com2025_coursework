@@ -14,8 +14,9 @@ class OrdersTest < ApplicationSystemTestCase
     visit orders_url
     click_on "New Order"
 
+    fill_in "Customer", with: @order.customer_id
+    fill_in "Item", with: @order.item_id
     fill_in "Message", with: @order.message
-    fill_in "Orderdetails", with: @order.orderDetails
     fill_in "Status", with: @order.status
     click_on "Create Order"
 
@@ -27,8 +28,9 @@ class OrdersTest < ApplicationSystemTestCase
     visit orders_url
     click_on "Edit", match: :first
 
+    fill_in "Customer", with: @order.customer_id
+    fill_in "Item", with: @order.item_id
     fill_in "Message", with: @order.message
-    fill_in "Orderdetails", with: @order.orderDetails
     fill_in "Status", with: @order.status
     click_on "Update Order"
 

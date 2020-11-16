@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :orders
+  resources :items
+  resources :customers
   # Set home/overview as root
   root 'home#overview'
 
