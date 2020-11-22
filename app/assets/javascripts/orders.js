@@ -6,6 +6,11 @@ $(document).on("turbolinks:load",function() {
         window.location = 'vieworder?=' + url;
     });
 
-
+      
+    $.ajax({  
+        "url": "/home/orders",  
+        "type": "GET",  
+        "datatype": "json"  
+    });  
     
 });
