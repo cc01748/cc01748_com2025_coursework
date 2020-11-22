@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  # Routes to database tables
   resources :orders
   resources :items
   resources :customers
+
   # Set home/overview as root
   root 'home#overview'
 
