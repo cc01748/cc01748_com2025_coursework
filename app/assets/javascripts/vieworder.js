@@ -5,5 +5,5 @@ $(document).on("turbolinks:load",function() {
     var urlLength = currentUrl.length;
     var orderNumber = currentUrl.substring(38, urlLength);
     
-    $('#order_number').text(orderNumber);
+    $('.order_number_vieworder').text(orderNumber);
 });

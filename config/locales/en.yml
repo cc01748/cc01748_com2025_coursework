@@ -43,7 +43,7 @@ en:
 
   # Text labels for order details - used in tabled and on vieworders page  
   order_details_labels:
-    order_number: NO.
+    order_num: NO.
     first_name: First name
     last_name: Last Name
     status: Status
@@ -55,7 +55,7 @@ en:
 
   # Base text for order details - these are only shown if details aren't grabbed from database
   order_details:
-    order_number: 1
+    order_num: 1
     first_name: ERR
     last_name: ERR
     status: ERR

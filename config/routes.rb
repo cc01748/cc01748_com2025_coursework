@@ -22,6 +22,7 @@ Rails.application.routes.draw do
 
   # Post request for contact page, form data is posted as parameters
   post 'home/contact', to: 'home#contact' do
+    
     @name = params["name"]
     @email = params["email"]
     @message = params["message"]

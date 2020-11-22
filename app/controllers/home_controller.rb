@@ -8,6 +8,6 @@ class HomeController < ApplicationController
   def overview
   end
 
-  def orders
+  def orders 
   end
 end
