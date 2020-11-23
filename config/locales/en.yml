@@ -53,17 +53,6 @@ en:
     contact_number: Contact Number
     order_details: Order Details
 
-  # Base text for order details - these are only shown if details aren't grabbed from database
-  order_details:
-    order_num: 1
-    first_name: ERR
-    last_name: ERR
-    status: ERR
-    date: ERR
-    message: ERR
-    email: ERR
-    contact_number: ERR
-    order_details: ERR
 
 
   

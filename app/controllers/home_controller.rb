@@ -9,5 +9,6 @@ class HomeController < ApplicationController
   end
 
   def orders 
+    @orders = Order.all
   end
 end
