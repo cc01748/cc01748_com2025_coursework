@@ -22,7 +22,7 @@
             <tbody>
                 <tr>
                 <% @orders.each do |order| %>
-                    <td class="order_number"><%= order.id%></td>
+                    <td class="order_number"><%= order.id %></td>
                     <td><%= order.customer.firstName %></td>
                     <td><%= order.customer.lastName %></td>
                     <td><%= order.status %></td>
