@@ -27,8 +27,8 @@
                     <td><%= order.customer.lastName %></td>
                     <td><%= order.status %></td>
                     <td><%= order.created_at %></td>
-                    <td><%=t order.message %></td>
-                    <td><button id = "go_to_button" onclick="window.location='vieworder?=<%= order.id %>'">GO TO</button>
+                    <td><%= order.message %></td>
+                    <td><button id = "go_to_button" onclick="window.location='vieworder?id=<%= order.id %>'">GO TO</button>
                     </td>
                 </tr>
                 <% end %>

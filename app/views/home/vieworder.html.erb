@@ -5,18 +5,42 @@
     </head>
 
     <body>
-    <h1 class="order_number_vieworder"></h1>
-    <p><%=t('order_details.first_name')%></p>
-    <p><%=t('order_details.last_name')%></p>
-    <p><%=t('order_details.status')%></p>
-    <p><%=t('order_details.date')%></p>
-    <p><%=t('order_details.message')%></p>
-    <p><%=t('order_details.email')%></p>
-    <p><%=t('order_details.contact_number')%></p>
-    <p><%=t('order_details.order_details')%></p>
     <br>
     <br>
+        <table class = "table">
+            <thead class = "thead-light">
+                <tr>
+                    <th><%=t('order_details_labels.order_num')%></th>
+                    <th><%=t('order_details_labels.first_name')%></th>
+                    <th><%=t('order_details_labels.last_name')%></th>
+                    <th><%=t('order_details_labels.status')%></th>
+                    <th><%=t('order_details_labels.date')%></th>
+                    <th><%=t('order_details_labels.message')%></th>
+                    <th><%=t('order_details_labels.email')%></th>
+                    <th><%=t('order_details_labels.contact_number')%></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><%= @specificOrder.id %></td>
+                    <td><%= @specificOrder.customer.firstName %></td>
+                    <td><%= @specificOrder.customer.lastName %></td>
+                    <td><%= @specificOrder.status %></td>
+                    <td><%= @specificOrder.created_at %></td>
+                    <td><%= @specificOrder.message %></td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
+    <br>
+    <p><strong><%=t('order_details_labels.order_details')%></strong></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <button id="picked_button" type="button" class="btn btn-primary btn-lg btn-block"><b><%=t('vieworder.actions.picked_button')%></b></button>
     <button id="collected_button" type="button" class="btn btn-primary btn-lg btn-block"><b><%=t('vieworder.actions.collected_button')%></b></button>
