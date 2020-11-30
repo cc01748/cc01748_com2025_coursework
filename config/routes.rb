@@ -20,6 +20,9 @@ Rails.application.routes.draw do
   # Set get route to home/orders on request
   get 'home/orders', to: 'home#orders'
 
+  # Set get route for home/vieworder on request
+  get 'home/vieworder', to: 'home#vieworder'
+
   # Post request for contact page, form data is posted as parameters
   post 'home/contact', to: 'home#contact' do
     
@@ -31,6 +34,7 @@ Rails.application.routes.draw do
     ContactHandlerMailer.with(name: @name, email: @email, message: @message).deliver_now
   end
 
-  # Set get route for home/vieworder on request
-  get 'home/vieworder', to: 'home#vieworder'
+  post 'home/vieworder', to: 'home#updateOrder' 
+
+
 end

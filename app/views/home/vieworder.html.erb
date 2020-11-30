@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+    <%= csrf_meta_tags %> 
     </head>
 
     <body>
@@ -29,21 +29,29 @@
                     <td><%= @specificOrder.status %></td>
                     <td><%= @specificOrder.created_at %></td>
                     <td><%= @specificOrder.message %></td>
-                    </td>
+                    <td><%= @specificOrder.customer.email %></td>
+                    <td><%= @specificOrder.customer.contactNumber %></td>
+                    
                 </tr>
             </tbody>
         </table>
 
     <br>
     <p><strong><%=t('order_details_labels.order_details')%></strong></p>
+    <p><%= @specificOrder.item.name %></p>
     <br>
     <br>
     <br>
     <br>
     <br>
 
-    <button id="picked_button" type="button" class="btn btn-primary btn-lg btn-block"><b><%=t('vieworder.actions.picked_button')%></b></button>
-    <button id="collected_button" type="button" class="btn btn-primary btn-lg btn-block"><b><%=t('vieworder.actions.collected_button')%></b></button>
+    <div>
+        <%= button_to 'Picked', '#updateOrder', :status => 'Picked', method: :post, class: 'btn btn-primary btn-lg btn-block'%>
+    </div>
+
+    <div>
+        <%= button_to 'Collected', '#updateOrder', :status => 'Collected', method: :post, class: 'btn btn-primary btn-lg btn-block'%>
+    </div>
 
     </body>
 </html>
