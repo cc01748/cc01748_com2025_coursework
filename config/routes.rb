@@ -34,7 +34,7 @@ Rails.application.routes.draw do
     ContactHandlerMailer.with(name: @name, email: @email, message: @message).deliver_now
   end
 
-  post 'home/vieworder', to: 'home#updateOrder' 
+  post 'home/vieworder', to: 'home#updateOrder'
 
 
 end

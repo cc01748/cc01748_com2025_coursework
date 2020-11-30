@@ -46,11 +46,11 @@
     <br>
 
     <div>
-        <%= button_to 'Picked', '#updateOrder', :status => 'Picked', method: :post, class: 'btn btn-primary btn-lg btn-block'%>
+        <%= button_to 'Picked', params: {:id => @specificOrder.id, :status => 'Picked'}, method: :post%>
     </div>
 
     <div>
-        <%= button_to 'Collected', '#updateOrder', :status => 'Collected', method: :post, class: 'btn btn-primary btn-lg btn-block'%>
+        <%= button_to 'Collected', params: {:id => @specificOrder.id, :status => 'Collected'}, method: :post%>
     </div>
 
     </body>
