@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <%= csrf_meta_tags %> 
     </head>
 
     <body>
@@ -51,6 +50,10 @@
 
     <div>
         <%= button_to 'Collected', params: {:id => @specificOrder.id, :status => 'Collected'}, method: :post%>
+    </div>
+
+    <div>
+        <%= button_to 'Cancel Order', params: {:id => @specificOrder.id, :status => 'Cancelled'}, method: :post%>
     </div>
 
     </body>
