@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <%= javascript_include_tag('contact') %>
     </head>
     
     <body>
@@ -24,7 +25,7 @@
                     <textarea name = "message" value = "<%= @message %>" class = "form-control" id = "formGroupMessage" placeholder = "Type your message here" >
                     </textarea>
                 </div>
-            <input type="submit" class = "btn btn-primary">
+            <input type="submit" class = "btn btn-primary" id="submit_button">
         </form>
         
     </body>
