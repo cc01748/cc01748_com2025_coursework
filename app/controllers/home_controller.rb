@@ -19,6 +19,8 @@ class HomeController < ApplicationController
   end
 
   def overview
+    @orders = Order.all
+    @ordersCount = Order.group(:status).count
   end
 
   def orders 

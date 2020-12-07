@@ -11,11 +11,6 @@ en:
   overview:
     page_title: Overview
 
-    # General overview data labels
-    data:
-      new_orders: New orders -
-      resolved_orders: Resolved orders - 
-
   # Orders page locales
   orders:
     page_title: All Orders

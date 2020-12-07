@@ -7,9 +7,10 @@
 
     <body>
         <h1><%=t('overview.page_title') %></h1>
-        <p><%=t('overview.data.new_orders') %></p>
-        <p><%=t('overview.data.resolved_orders') %></p>
-        
+
+        <% @ordersCount.each do |key, value| %>
+            <p><%= key + " orders " + " - " + value.to_s %><p>
+        <% end %>
     <%= yield %>
     </body>
 
