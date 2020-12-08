@@ -8,7 +8,7 @@
     <body>
         <h1><%=t('overview.page_title') %></h1>
 
-        <% @ordersCount.each do |key, value| %>
+        <% @ordersStatusCount.each do |key, value| %>
             <p><%= key + " orders " + " - " + value.to_s %><p>
         <% end %>
     <%= yield %>

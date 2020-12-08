@@ -7,14 +7,17 @@ $(document).ready(function() {
         if (user.length < 1) {
             alert("Username field empty");
             return false;
-        };
-        if (email.length < 1) {
+        }
+        else if (email.length < 1) {
             alert("Email field empty");
             return false;
-        };
-        if (message.length < 1) {
+        }
+        else if (message.length < 1) {
             alert("Message field empty");
             return false;
         }
+        else {
+            
+        };
     });
 })

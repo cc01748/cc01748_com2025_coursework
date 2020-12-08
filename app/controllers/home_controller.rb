@@ -20,7 +20,7 @@ class HomeController < ApplicationController
 
   def overview
     @orders = Order.all
-    @ordersCount = Order.group(:status).count
+    @ordersStatusCount = Order.group(:status).count
   end
 
   def orders 
