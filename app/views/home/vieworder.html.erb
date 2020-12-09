@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <%= stylesheet_link_tag 'vieworder'%>
     </head>
 
     <body>
     <br>
     <br>
+    <!-- Create table to hold database details with custom headers -->
         <table class = "table">
             <thead class = "thead-light">
                 <tr>
@@ -22,6 +24,7 @@
             </thead>
             <tbody>
                 <tr>
+                    <!-- Display data on specific order found by ID passed as a param -->
                     <td><%= @specificOrder.id %></td>
                     <td><%= @specificOrder.customer.firstName %></td>
                     <td><%= @specificOrder.customer.lastName %></td>
@@ -36,24 +39,20 @@
         </table>
 
     <br>
-    <p><strong><%=t('order_details_labels.order_details')%></strong></p>
-    <p><%= @specificOrder.item.name %></p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <h2>
+        <div class = "item_details_container">
+            <p><strong><%=t('order_details_labels.order_details')%></strong></p>
+            <p><%=t('vieworder.item_details_labels.item_name_label')%> <%= @specificOrder.item.name %></p>
+            <p><%=t('vieworder.item_details_labels.item_id_label')%> <%= @specificOrder.item.id %></p>
+        </div>
+    </h2>
 
-    <div>
-        <%= button_to 'Picked', params: {:id => @specificOrder.id, :status => 'Picked'}, method: :post%>
-    </div>
+    <div class = "buttons_container">
+        <%= button_to 'Picked', {:id => @specificOrder.id, :status => 'Picked'}, {class: "btn btn-primary btn-lg btn-block"}%>
 
-    <div>
-        <%= button_to 'Collected', params: {:id => @specificOrder.id, :status => 'Collected'}, method: :post%>
-    </div>
+        <%= button_to 'Collected', {:id => @specificOrder.id, :status => 'Collected'}, {class: "btn btn-primary btn-lg btn-block"}%>
 
-    <div>
-        <%= button_to 'Cancel Order', params: {:id => @specificOrder.id, :status => 'Cancelled'}, method: :post%>
+        <%= button_to 'Cancel Order', {:id => @specificOrder.id, :status => 'Cancelled'}, {class: "btn btn-primary btn-lg btn-block"}%>
     </div>
 
     </body>

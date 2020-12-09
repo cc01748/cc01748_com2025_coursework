@@ -35,10 +35,9 @@ en:
   vieworder: 
     page_title: View Order 
 
-    # Action button text's
-    actions: 
-      picked_button: Picked
-      collected_button: Collected
+    item_details_labels:
+      item_name_label: Item name -  
+      item_id_label: Item ID - 
 
   # Text labels for order details - used in tabled and on vieworders page  
   order_details_labels:
@@ -50,7 +49,9 @@ en:
     message: Message
     email: Email
     contact_number: Contact Number
-    order_details: Order Details/Items
+    order_details: Order Details/Item
+
+
 
 
 
