@@ -3,15 +3,17 @@
     <head>
         <%= csrf_meta_tags %>
         <%= csp_meta_tag %>
+        <%= stylesheet_link_tag "overview" %>
     </head>
 
     <body>
-        <h1><%=t('overview.page_title') %></h1>
 
-        <% @ordersStatusCount.each do |key, value| %>
-            <p><%= key + " orders " + " - " + value.to_s %><p>
-        <% end %>
-    <%= yield %>
+    <div class = "main_text">
+        <h1><%=t('overview.page_title') %></h1>
+            <% @ordersStatusCount.each do |key, value| %>
+                <p><%= key + " orders " + " - " + value.to_s %><p>
+            <% end %>
+        </div>
     </body>
 
 </html>

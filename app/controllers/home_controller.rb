@@ -19,7 +19,9 @@ class HomeController < ApplicationController
   end
 
   def overview
+    # create instance of orders table
     @orders = Order.all
+    # create hashmap of all orders based on their status
     @ordersStatusCount = Order.group(:status).count
   end
 

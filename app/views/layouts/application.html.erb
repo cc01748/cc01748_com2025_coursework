@@ -10,7 +10,8 @@
   </head>
 
   <body>
-  <div class = "navbar-body">
+  <strong>
+  <div> 
     <ul class = "nav  nav-pills nav-justified">
       <li class = "nav-overview">
         <a class = "nav-link" href="overview"><%=t('navbar.overview') %></a>
@@ -23,6 +24,13 @@
       </li>
     </ul>
   </div>
+  </strong>
+
+
     <%= yield %>
+  <div class = "footer">
+    <p><%=t('footer.footer_creator') %></p>
+    <p><%=t('footer.footer_text') %></p>
+  </div>
   </body>
 </html>
