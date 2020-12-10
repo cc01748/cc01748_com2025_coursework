@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :items
   resources :customers
 
-  # Set home/overview as root
+  # Set home#overview as root
   root 'home#overview'
 
   # Set get route to home/overview on request
