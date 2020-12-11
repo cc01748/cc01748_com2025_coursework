@@ -6,6 +6,7 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     # Was request successful?
     assert_response :success
 
+    # Test that correct template is used
     assert_template layout: 'application'
   end
 
@@ -14,20 +15,19 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     # Was request successful?
     assert_response :success
 
+    # Test that correct template is used
     assert_template layout: 'application'
   end
 
   test "should get vieworder" do
-    Order.all
-    specificOrder = Order.find(1)
-    puts specificOrder
+    # Test that viewing order with id 1 works
+    @order = orders(:one)
     get "/home/vieworder?id=1"
     
     # Was request successful?
     assert_response :success
 
-    
-
+    # Test that correct template is used
     assert_template layout: 'application'
   end
 
@@ -37,6 +37,7 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     # Was request successful?
     assert_response :success
 
+    # Test that correct template is used
     assert_template layout: 'application'
   end
 
