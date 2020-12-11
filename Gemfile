@@ -66,7 +66,8 @@ gem 'modernizr-rails'
 # JQuery for rails
 gem 'jquery-rails'
 
-# Gem needed for testing controllers, apparently
 gem 'rails-controller-testing'
+
+
 
 

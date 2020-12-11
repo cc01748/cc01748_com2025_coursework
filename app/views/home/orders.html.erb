@@ -1,40 +1,34 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    </head>
+<head>
+</head>
 
-    <body>
-        <h1><%=t('orders.page_title') %></h1>
+<h1><%=t('orders.page_title') %></h1>
 
-        <table class = "table">
-            <thead class = "thead-light">
-                <tr>
-                    <th><%=t('order_details_labels.order_num')%></th>
-                    <th><%=t('order_details_labels.first_name')%></th>
-                    <th><%=t('order_details_labels.last_name')%></th>
-                    <th><%=t('order_details_labels.status')%></th>
-                    <th><%=t('order_details_labels.date')%></th>
-                    <th><%=t('order_details_labels.message')%></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <!-- Loop through orders table and add data to table -->
-                <% @orders.each do |order| %>
-                    <td class="order_number"><%= order.id %></td>
-                    <td><%= order.customer.firstName %></td>
-                    <td><%= order.customer.lastName %></td>
-                    <td><%= order.status %></td>
-                    <td><%= order.created_at %></td>
-                    <td><%= order.message %></td>
-                    <!-- Add a button that posts id relevant to the clicked row -->
-                    <td><button id = "go_to_button" onclick="window.location='vieworder?id=<%= order.id %>'">GO TO</button>
-                    </td>
-                </tr>
-                <% end %>
-            </tbody>
-        </table>
-
-
-</html>
+<table class = "table">
+    <thead class = "thead-light">
+        <tr>
+            <th><%=t('order_details_labels.order_num')%></th>
+            <th><%=t('order_details_labels.first_name')%></th>
+            <th><%=t('order_details_labels.last_name')%></th>
+            <th><%=t('order_details_labels.status')%></th>
+            <th><%=t('order_details_labels.date')%></th>
+            <th><%=t('order_details_labels.message')%></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <!-- Loop through orders table and add data to table -->
+        <% @orders.each do |order| %>
+            <td class="order_number"><%= order.id %></td>
+            <td><%= order.customer.firstName %></td>
+            <td><%= order.customer.lastName %></td>
+            <td><%= order.status %></td>
+            <td><%= order.created_at %></td>
+            <td><%= order.message %></td>
+            <!-- Add a button that posts id relevant to the clicked row -->
+            <td><button id = "go_to_button" onclick="window.location='vieworder?id=<%= order.id %>'">GO TO</button>
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>

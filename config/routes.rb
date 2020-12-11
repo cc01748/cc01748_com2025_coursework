@@ -1,9 +1,4 @@
 Rails.application.routes.draw do
-  # Routes to database tables
-  resources :orders
-  resources :items
-  resources :customers
-
   # Set home#overview as root
   root 'home#overview'
 
@@ -25,5 +20,10 @@ Rails.application.routes.draw do
   # Post request to updateOrder method on button click
   post 'home/vieworder', to: 'home#updateOrder'
 
+  # Routes to database tables
+  resources :orders
+  resources :items
+  resources :customers
+  resources :home
 
 end

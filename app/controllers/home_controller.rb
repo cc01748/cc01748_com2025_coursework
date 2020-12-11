@@ -40,7 +40,7 @@ class HomeController < ApplicationController
   end
 
   # Method called when orders page is requested
-  def orders 
+  def orders
     # Create instance variable for orders table
     @orders = Order.all
   end

@@ -1,29 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <%= javascript_include_tag('contact') %>
-    </head>
-    
-    <body>
-        <h1><%=t('contact.page_title') %></h1>
+<head>
+</head>
 
-        <br>
+<h1><%=t('contact.page_title') %></h1>
+
+<br>
         
-        <form id="contact_form" accept-charset="UTF-8" method="post">
-                <div class = "form-group">
-                    <label for = "formGroupUser"><%=t('contact.form.username') %></label>
-                    <input name = "name" value = "<%= @name %>" type = "text" class = "form-control" id = "formGroupUser" placeholder = "<%=t('contact.form.username_placeholder') %>">
-                </div>
-                <div class = "form-group">
-                    <label for = "formGroupEmail"><%=t('contact.form.email') %></label>
-                    <input name = "email" value = "<%= @email %>" type = "email" class = "form-control" id = "formGroupEmail" placeholder = "<%=t('contact.form.email_placeholder') %>">
-                </div>
-                <div class = "form-group">
-                    <label for = "formGroupMessage"><%=t('contact.form.message') %></label>
-                    <textarea id="textArea" name = "message" value = "<%= @message %>" class = "form-control" id = "formGroupMessage"></textarea>
-                </div>
-            <input type="submit" class = "btn btn-primary" id="submit_button">
-        </form>
-        
-    </body>
-</html>
+<form id="contact_form" accept-charset="UTF-8" method="post">
+        <div class = "form-group">
+            <label for = "formGroupUser"><%=t('contact.form.username') %></label>
+            <input name = "name" value = "<%= @name %>" type = "text" class = "form-control" id = "formGroupUser" placeholder = "<%=t('contact.form.username_placeholder') %>">
+        </div>
+        <div class = "form-group">
+            <label for = "formGroupEmail"><%=t('contact.form.email') %></label>
+            <input name = "email" value = "<%= @email %>" type = "email" class = "form-control" id = "formGroupEmail" placeholder = "<%=t('contact.form.email_placeholder') %>">
+        </div>
+        <div class = "form-group">
+            <label for = "formGroupMessage"><%=t('contact.form.message') %></label>
+            <textarea id="textArea" name = "message" value = "<%= @message %>" class = "form-control" id = "formGroupMessage"></textarea>
+        </div>
+    <input type="submit" class = "btn btn-primary" id="submit_button">
+</form>

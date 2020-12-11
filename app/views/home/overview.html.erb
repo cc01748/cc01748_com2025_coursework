@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <%= csrf_meta_tags %>
-        <%= csp_meta_tag %>
-        <%= stylesheet_link_tag "overview" %>
-    </head>
 
-    <body>
+<head>
+</head>
 
-    <!-- Loop through hashmap of orders based on status and display them -->
-    <div class = "main_text">
-        <h1><%=t('overview.page_title') %></h1>
-            <% @ordersStatusCount.each do |key, value| %>
-                <p><%= key + " orders " + " - " + value.to_s %><p>
-            <% end %>
-        </div>
-    </body>
+<!-- Loop through hashmap of orders based on status and display them -->
+<div class = "main_text">
+    <h1><%=t('overview.page_title') %></h1>
+        <% @ordersStatusCount.each do |key, value| %>
+            <p><%= key + " orders " + " - " + value.to_s %><p>
+        <% end %>
+    </div>
+
 
 </html>
 

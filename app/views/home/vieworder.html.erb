@@ -1,59 +1,52 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <%= stylesheet_link_tag 'vieworder'%>
-    </head>
+<head>
+</head>
 
-    <body>
-    <br>
-    <br>
-    <!-- Create table to hold database details with custom headers -->
-        <table class = "table">
-            <thead class = "thead-light">
-                <tr>
-                    <th><%=t('order_details_labels.order_num')%></th>
-                    <th><%=t('order_details_labels.first_name')%></th>
-                    <th><%=t('order_details_labels.last_name')%></th>
-                    <th><%=t('order_details_labels.status')%></th>
-                    <th><%=t('order_details_labels.date')%></th>
-                    <th><%=t('order_details_labels.message')%></th>
-                    <th><%=t('order_details_labels.email')%></th>
-                    <th><%=t('order_details_labels.contact_number')%></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <!-- Display data on specific order found by ID passed as a param -->
-                    <td><%= @specificOrder.id %></td>
-                    <td><%= @specificOrder.customer.firstName %></td>
-                    <td><%= @specificOrder.customer.lastName %></td>
-                    <td><%= @specificOrder.status %></td>
-                    <td><%= @specificOrder.created_at %></td>
-                    <td><%= @specificOrder.message %></td>
-                    <td><%= @specificOrder.customer.email %></td>
-                    <td><%= @specificOrder.customer.contactNumber %></td>
-                    
-                </tr>
-            </tbody>
-        </table>
+<br>
+<br>
+<!-- Create table to hold database details with custom headers -->
+    <table class = "table">
+        <thead class = "thead-light">
+            <tr>
+                <th><%=t('order_details_labels.order_num')%></th>
+                <th><%=t('order_details_labels.first_name')%></th>
+                <th><%=t('order_details_labels.last_name')%></th>
+                <th><%=t('order_details_labels.status')%></th>
+                <th><%=t('order_details_labels.date')%></th>
+                <th><%=t('order_details_labels.message')%></th>
+                <th><%=t('order_details_labels.email')%></th>
+                <th><%=t('order_details_labels.contact_number')%></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Display data on specific order found by ID passed as a param -->
+                <td><%= @specificOrder.id %></td>
+                <td><%= @specificOrder.customer.firstName %></td>
+                <td><%= @specificOrder.customer.lastName %></td>
+                <td><%= @specificOrder.status %></td>
+                <td><%= @specificOrder.created_at %></td>
+                <td><%= @specificOrder.message %></td>
+                <td><%= @specificOrder.customer.email %></td>
+                <td><%= @specificOrder.customer.contactNumber %></td> 
+            </tr>
+        </tbody>
+    </table>
 
-    <br>
-    <h2>
-        <div class = "item_details_container">
-            <p><strong><%=t('order_details_labels.order_details')%></strong></p>
-            <p><%=t('vieworder.item_details_labels.item_name_label')%> <%= @specificOrder.item.name %></p>
-            <p><%=t('vieworder.item_details_labels.item_id_label')%> <%= @specificOrder.item.id %></p>
-        </div>
-    </h2>
-
-    <div class = "buttons_container">
-        <%= button_to 'Picked', {:id => @specificOrder.id, :status => 'Picked'}, {class: "btn btn-primary btn-lg btn-block"}%>
-
-        <%= button_to 'Collected', {:id => @specificOrder.id, :status => 'Collected'}, {class: "btn btn-primary btn-lg btn-block"}%>
-
-        <%= button_to 'Cancel Order', {:id => @specificOrder.id, :status => 'Cancelled'}, {class: "btn btn-primary btn-lg btn-block"}%>
+<br>
+<h2>
+    <div class = "item_details_container">
+        <p><strong><%=t('order_details_labels.order_details')%></strong></p>
+        <p><%=t('vieworder.item_details_labels.item_name_label')%> <%= @specificOrder.item.name %></p>
+        <p><%=t('vieworder.item_details_labels.item_id_label')%> <%= @specificOrder.item.id %></p>
     </div>
+</h2>
 
-    </body>
-</html>
+<div class = "buttons_container">
+    <%= button_to 'Picked', {:id => @specificOrder.id, :status => 'Picked'}, {class: "btn btn-primary btn-lg btn-block"}%>
+
+    <%= button_to 'Collected', {:id => @specificOrder.id, :status => 'Collected'}, {class: "btn btn-primary btn-lg btn-block"}%>
+
+    <%= button_to 'Cancel Order', {:id => @specificOrder.id, :status => 'Cancelled'}, {class: "btn btn-primary btn-lg btn-block"}%>
+</div>
+
