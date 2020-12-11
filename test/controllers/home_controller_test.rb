@@ -8,6 +8,12 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
 
     # Test that correct template is used
     assert_template layout: 'application'
+
+    # Test that title is correct
+    assert_select 'title', 'Click and Collect'
+
+    # Test that page heading is correct
+    assert_select 'h1' , 'Overview'
   end
 
   test "should get orders" do
@@ -17,6 +23,12 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
 
     # Test that correct template is used
     assert_template layout: 'application'
+
+    # Test that title is correct
+    assert_select 'title', 'Click and Collect'
+
+    # Test that page heading is correct
+    assert_select 'h1' , 'All Orders'
   end
 
   test "should get vieworder" do
@@ -29,6 +41,9 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
 
     # Test that correct template is used
     assert_template layout: 'application'
+
+    # Test that title is correct
+    assert_select 'title', 'Click and Collect'
   end
 
 
@@ -39,9 +54,12 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
 
     # Test that correct template is used
     assert_template layout: 'application'
+
+    # Test that title is correct
+    assert_select 'title', 'Click and Collect'
+
+    # Test that page heading is correct
+    assert_select 'h1' , 'Contact Site Owners'
   end
-
-  
-
 
 end

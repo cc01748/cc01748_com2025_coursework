@@ -4,12 +4,19 @@ one:
   id: 1
   customer: one
   item: one
-  status: MyString
-  message: MyString
+  status: Picked
+  message: N/A
 
 two:
   id: 2
   customer: two
   item: two
-  status: MyString
-  message: MyString
+  status: Collected
+  message: N/A
+
+three:
+  id: 3
+  customer: three
+  item: three
+  status: Unpicked
+  message: N/A

@@ -1,13 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  firstName: MyString
-  lastName: MyString
-  email: MyString
-  contactNumber: MyString
+  firstName: Cade
+  lastName: Clark
+  email: cc01748@surrey.ac.uk
+  contactNumber: 07549659167
 
 two:
-  firstName: MyString
-  lastName: MyString
-  email: MyString
-  contactNumber: MyString
+  firstName: Chris
+  lastName: Digby
+  email: wiggleguy@gmail.com
+  contactNumber: 01279321237
+
+three:
+  firstName: Ham
+  lastName: Chimp
+  email: flymetothemoon@gmail.com
+  contactNumber: 01234567890
