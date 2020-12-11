@@ -24,6 +24,5 @@ Rails.application.routes.draw do
   resources :orders
   resources :items
   resources :customers
-  resources :home
 
 end
