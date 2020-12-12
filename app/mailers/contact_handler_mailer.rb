@@ -7,6 +7,6 @@ class ContactHandlerMailer < ApplicationMailer
         @message = params[:message]
 
         # Send email to site owners address
-        mail(to: 'cc01748@surrey.ac.uk', subject: 'Click and Collect message')
+        mail(to: 'cc01748@surrey.ac.uk', subject: 'Click and Collect message', from: @email)
     end
 end

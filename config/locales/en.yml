@@ -51,6 +51,12 @@ en:
     contact_number: Contact Number
     order_details: Order Details/Item
 
+  # Email format data
+  email_format:
+    email_heading: Message from Click and Collect System
+    from_user: User -
+    from_email: Email -
+    message_tag: BELOW IS USER MESSAGE
 
 
 

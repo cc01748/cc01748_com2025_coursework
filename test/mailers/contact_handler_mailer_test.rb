@@ -5,9 +5,9 @@ class ContactHandlerMailerTest < ActionMailer::TestCase
   # Create mailer instance using contact_handler_format format
   test 'tests if mailer works' do
     # Create dummy data to be passed to mailer
-    @name = 'Testman'
-    @message = 'Hello'
-    @email = 'testman@gmail.com'
+    @name = 'John Smith'
+    @message = 'Hello, I have a problem with your site!'
+    @email = 'johnsmith@gmail.com'
 
     # Test if the email is sent
     email = ContactHandlerMailer.with(name: @name, email: @email, message: @message)

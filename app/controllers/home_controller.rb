@@ -28,7 +28,7 @@ class HomeController < ApplicationController
     @message = params[:message]
 
     # Call mailer with data
-    ContactHandlerMailer.with(name: @name, email: @email, message: @message).new_email
+    ContactHandlerMailer.with(name: @name, email: @email, message: @message).new_email.deliver
   end
 
   # Method called when overview page is requested

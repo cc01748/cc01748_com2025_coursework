@@ -16,19 +16,15 @@
                 return false;
             }
             // Check that email field is not empty
-            else if (email.length < 1) {
+            if (email.length < 1) {
                 alert("Email field empty");
                 return false;
             }
             // Check that message field is not empty
-            else if (message.length < 1) {
+            if (message.length < 1) {
                 alert("Message field empty");
                 return false;
             }
-            // If all test cases pass, post form
-            else {
-            
-            };
         });
     })
 </script>
@@ -48,7 +44,7 @@
         </div>
         <div class = "form-group">
             <label for = "formGroupMessage"><%=t('contact.form.message') %></label>
-            <textarea id="textArea" name = "message" value = "<%= @message %>" class = "form-control" id = "formGroupMessage"></textarea>
+            <textarea name = "message" value = "<%= @message %>" class = "form-control" id = "formGroupMessage"></textarea>
         </div>
     <input type="submit" class = "btn btn-primary" id="submit_button">
 </form>
